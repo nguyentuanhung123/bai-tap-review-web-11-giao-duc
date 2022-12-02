@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo giao diện Quản lý giáo viên</title>
+    <link rel="stylesheet" href="../assests/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="sidebar__header">
+               <div class="devices">
+                   <img class="devices__img" src="../assests/Icons/ic_IconThietBi.svg" alt="">
+                   <h1 class="devices__title">Thiết bị</h1>
+               </div>
+               <div class="menu-bar">
+                    <img src="../assests/Icons/ic_xemchitiet.png" alt="">
+               </div>
+            </div>
+            <ul class="sidebar__list">
+                <li class="sidebar-item">
+                    <a class="sidebar-link" href="#">
+                        <div class="image">
+                            <img src="../assests/Icons/ic_TongQuan.svg" alt="">
+                        </div>
+                        <h1>Tổng quan</h1>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a class="sidebar-link" href="#">
+                        <div class="image">
+                            <img src="../assests/Icons/ic_ThietBi.svg" alt="">
+                        </div>
+                        <h1>Thiết bị</h1>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a class="sidebar-link" href="#">
+                        <div class="image">
+                            <img src="../assests/Icons/ic_MuonTra.svg" alt="">
+                        </div>
+                        <h1>Mượn trả</h1>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a class="sidebar-link" href="#">
+                        <div class="image">
+                            <img src="../assests/Icons/ic_BaoCao.svg" alt="">
+                        </div>
+                        <h1>Báo cáo</h1>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a class="sidebar-link" href="#">
+                        <div class="image">
+                            <img src="../assests/Icons/ic_HeThong.svg" alt="">
+                        </div>
+                        <h1>Hệ thống</h1>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="main">
+            <div class="header">
+                <div class="header__job">
+                    <span>Cán bộ , giáo viên </span>
+                    <div class="header__job--icon"></div>
+                </div>
+                <div class="header__list">
+                    <div class="header__list-icon">
+                        <img src="../assests/Icons/ic_Notification_32.png" alt="">
+                    </div>
+                    <div class="header__list-select">
+                        <span>Admin</span>
+                        <img src="../assests/Icons/ic_Chevron.png" alt="">
+                    </div>
+                    <div class="header__list-img">
+                        <img src="../assests/Icons/ic_Avatar_36.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="page">
+                <div class="toolbar">
+                    <div class="toolbar__search">
+                       <div class="toolbar__search-input">
+                          <input type="text" id="name">
+                        </div>
+                        <div class="toolbar__search-icon">
+                           <label for="name">
+                               <img src="../assests/Icons/Ic_seerch.png" alt="" >
+                           </label>
+                        </div>
+                    </div>
+                    <div class="toolbar__buttons">
+                        <button>Thêm</button>
+                        <button class="print">Xuất khẩu</button>
+                        
+                        <img src="../assests/Icons/ic_More.png" alt="">
+
+                    </div>
+                </div>
+                <div class="paging">
+                    <div class="table">
+                        <table id="teacher">
+                            <tr>
+                                <th class="text-align--center">
+                                    <img src="../assests/Icons/ic_Checkbox_Inactive.png" alt="">
+                                </th>
+                                <th class="text-align--center">
+                                    Số hiệu cán bộ
+                                </th>
+                                <th class="text-align--center">
+                                    Họ và tên
+                                </th>
+                                <th class="text-align--center">
+                                    Số điện thoại
+                                </th>
+                                <th class="text-align--center">
+                                    Tổ chuyên môn
+                                </th>
+                                <th class="text-align--center">
+                                    QL theo môn
+                                </th>
+                                <th class="text-align--center">
+                                    QL kho,phòng
+                                </th>
+                                <th class="text-align--center">
+                                    Đào tạo QLTB
+                                </th>
+                                <th class="text-align--center">
+                                    Đang làm việc
+                                </th>
+                                <th>
+
+                                </th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="../assests/Icons/ic_Checkbox_Inactive.png" alt="">
+                                </td>
+                                <td class="m-sidebar">
+                                    MS15001
+                                </td>
+                                <td class="c-aside">
+                                    Lê Nguyễn Phương Anh
+                                </td>
+                                <td class="m-sidebar">
+                                    0360368999
+                                </td>
+                                <td>
+                                    Tổ Toán - Tin
+                                </td>
+                                <td>
+                                    Lý
+                                </td>
+                                <td>
+                                    Phòng Tin , phòng TN Hoá học
+                                </td>
+                                <td>
+                                    <img src="../assests/Icons/ic_Check.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="../assests/Icons/ic_Check.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="../assests/Icons/ic_Edit.png" alt="" tabindex="0">
+                                    <img src="../assests/Icons/ic_Remove.png" alt="" tabindex="0">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="../assests/Icons/ic_Checkbox_Inactive.png" alt="">
+                                </td>
+                                <td class="m-sidebar">
+                                    MS15001
+                                </td>
+                                <td class="c-aside">
+                                    Lê Nguyễn Phương Anh
+                                </td>
+                                <td class="m-sidebar">
+                                    0360368999
+                                </td>
+                                <td>
+                                    Tổ Toán - Tin
+                                </td>
+                                <td>
+                                    Lý
+                                </td>
+                                <td>
+                                    Phòng Tin , phòng TN Hoá học
+                                </td>
+                                <td>
+                                    <img src="../assests/Icons/ic_Check.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="../assests/Icons/ic_Check.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="../assests/Icons/ic_Edit.png" alt="" tabindex="0">
+                                    <img src="../assests/Icons/ic_Remove.png" alt="" tabindex="0">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="../assests/Icons/ic_Checkbox_Inactive.png" alt="">
+                                </td>
+                                <td class="m-sidebar">
+                                    MS15001
+                                </td>
+                                <td class="c-aside">
+                                    Lê Nguyễn Phương Anh
+                                </td>
+                                <td class="m-sidebar">
+                                    0360368999
+                                </td>
+                                <td>
+                                    Tổ Toán - Tin
+                                </td>
+                                <td>
+                                    Lý
+                                </td>
+                                <td>
+                                    Phòng Tin , phòng TN Hoá học
+                                </td>
+                                <td>
+                                    <img src="../assests/Icons/ic_Check.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="../assests/Icons/ic_Check.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="../assests/Icons/ic_Edit.png" alt="" tabindex="0">
+                                    <img src="../assests/Icons/ic_Remove.png" alt="" tabindex="0">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="../assests/Icons/ic_Checkbox_Inactive.png" alt="">
+                                </td>
+                                <td class="m-sidebar">
+                                    MS15001
+                                </td>
+                                <td class="c-aside">
+                                    Lê Nguyễn Phương Anh
+                                </td>
+                                <td class="m-sidebar">
+                                    0360368999
+                                </td>
+                                <td>
+                                    Tổ Toán - Tin
+                                </td>
+                                <td>
+                                    Lý
+                                </td>
+                                <td>
+                                    Phòng Tin , phòng TN Hoá học
+                                </td>
+                                <td>
+                                    <img src="../assests/Icons/ic_Check.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="../assests/Icons/ic_Check.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="../assests/Icons/ic_Edit.png" alt="" tabindex="0">
+                                    <img src="../assests/Icons/ic_Remove.png" alt="" tabindex="0">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="../assests/Icons/ic_Checkbox_Inactive.png" alt="">
+                                </td>
+                                <td class="m-sidebar">
+                                    MS15001
+                                </td>
+                                <td class="c-aside">
+                                    Lê Nguyễn Phương Anh
+                                </td>
+                                <td class="m-sidebar">
+                                    0360368999
+                                </td>
+                                <td>
+                                    Tổ Toán - Tin
+                                </td>
+                                <td>
+                                    Lý
+                                </td>
+                                <td>
+                                    Phòng Tin , phòng TN Hoá học
+                                </td>
+                                <td>
+                                    <img src="../assests/Icons/ic_Check.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="../assests/Icons/ic_Check.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="../assests/Icons/ic_Edit.png" alt="" tabindex="0">
+                                    <img src="../assests/Icons/ic_Remove.png" alt="" tabindex="0">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="../assests/Icons/ic_Checkbox_Inactive.png" alt="">
+                                </td>
+                                <td class="m-sidebar">
+                                    MS15001
+                                </td>
+                                <td class="c-aside">
+                                    Lê Nguyễn Phương Anh
+                                </td>
+                                <td class="m-sidebar">
+                                    0360368999
+                                </td>
+                                <td>
+                                    Tổ Toán - Tin
+                                </td>
+                                <td>
+                                    Lý
+                                </td>
+                                <td>
+                                    Phòng Tin , phòng TN Hoá học
+                                </td>
+                                <td>
+                                    <img src="../assests/Icons/ic_Check.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="../assests/Icons/ic_Check.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="../assests/Icons/ic_Edit.png" alt="" tabindex="0">
+                                    <img src="../assests/Icons/ic_Remove.png" alt="" tabindex="0">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="../assests/Icons/ic_Checkbox_Inactive.png" alt="">
+                                </td>
+                                <td class="m-sidebar">
+                                    MS15001
+                                </td>
+                                <td class="c-aside">
+                                    Lê Nguyễn Phương Anh
+                                </td>
+                                <td class="m-sidebar">
+                                    0360368999
+                                </td>
+                                <td>
+                                    Tổ Toán - Tin
+                                </td>
+                                <td>
+                                    Lý
+                                </td>
+                                <td>
+                                    Phòng Tin , phòng TN Hoá học
+                                </td>
+                                <td>
+                                    <img src="../assests/Icons/ic_Check.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="../assests/Icons/ic_Check.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="../assests/Icons/ic_Edit.png" alt="" tabindex="0">
+                                    <img src="../assests/Icons/ic_Remove.png" alt="" tabindex="0">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="../assests/Icons/ic_Checkbox_Inactive.png" alt="">
+                                </td>
+                                <td class="m-sidebar">
+                                    MS15001
+                                </td>
+                                <td class="c-aside">
+                                    Lê Nguyễn Phương Anh
+                                </td>
+                                <td class="m-sidebar">
+                                    0360368999
+                                </td>
+                                <td>
+                                    Tổ Toán - Tin
+                                </td>
+                                <td>
+                                    Lý
+                                </td>
+                                <td>
+                                    Phòng Tin , phòng TN Hoá học
+                                </td>
+                                <td>
+                                    <img src="../assests/Icons/ic_Check.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="../assests/Icons/ic_Check.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="../assests/Icons/ic_Edit.png" alt="" tabindex="0">
+                                    <img src="../assests/Icons/ic_Remove.png" alt="" tabindex="0">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="../assests/Icons/ic_Checkbox_Inactive.png" alt="">
+                                </td>
+                                <td class="m-sidebar">
+                                    MS15001
+                                </td>
+                                <td class="c-aside">
+                                    Lê Nguyễn Phương Anh
+                                </td>
+                                <td class="m-sidebar">
+                                    0360368999
+                                </td>
+                                <td>
+                                    Tổ Toán - Tin
+                                </td>
+                                <td>
+                                    Lý
+                                </td>
+                                <td>
+                                    Phòng Tin , phòng TN Hoá học
+                                </td>
+                                <td>
+                                    <img src="../assests/Icons/ic_Check.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="../assests/Icons/ic_Check.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="../assests/Icons/ic_Edit.png" alt="" tabindex="0">
+                                    <img src="../assests/Icons/ic_Remove.png" alt="" tabindex="0">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="../assests/Icons/ic_Checkbox_Inactive.png" alt="">
+                                </td>
+                                <td class="m-sidebar">
+                                    MS15001
+                                </td>
+                                <td class="c-aside">
+                                    Lê Nguyễn Phương Anh
+                                </td>
+                                <td class="m-sidebar">
+                                    0360368999
+                                </td>
+                                <td>
+                                    Tổ Toán - Tin
+                                </td>
+                                <td>
+                                    Lý
+                                </td>
+                                <td>
+                                    Phòng Tin , phòng TN Hoá học
+                                </td>
+                                <td>
+                                    <img src="../assests/Icons/ic_Check.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="../assests/Icons/ic_Check.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="../assests/Icons/ic_Edit.png" alt="" tabindex="0">
+                                    <img src="../assests/Icons/ic_Remove.png" alt="" tabindex="0">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="../assests/Icons/ic_Checkbox_Inactive.png" alt="">
+                                </td>
+                                <td class="m-sidebar">
+                                    MS15001
+                                </td>
+                                <td class="c-aside">
+                                    Lê Nguyễn Phương Anh
+                                </td>
+                                <td class="m-sidebar">
+                                    0360368999
+                                </td>
+                                <td>
+                                    Tổ Toán - Tin
+                                </td>
+                                <td>
+                                    Lý
+                                </td>
+                                <td>
+                                    Phòng Tin , phòng TN Hoá học
+                                </td>
+                                <td>
+                                    <img src="../assests/Icons/ic_Check.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="../assests/Icons/ic_Check.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="../assests/Icons/ic_Edit.png" alt="" tabindex="0">
+                                    <img src="../assests/Icons/ic_Remove.png" alt="" tabindex="0">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="../assests/Icons/ic_Checkbox_Inactive.png" alt="">
+                                </td>
+                                <td class="m-sidebar">
+                                    MS15001
+                                </td>
+                                <td class="c-aside">
+                                    Lê Nguyễn Phương Anh
+                                </td>
+                                <td class="m-sidebar">
+                                    0360368999
+                                </td>
+                                <td>
+                                    Tổ Toán - Tin
+                                </td>
+                                <td>
+                                    Lý
+                                </td>
+                                <td>
+                                    Phòng Tin , phòng TN Hoá học
+                                </td>
+                                <td>
+                                    <img src="../assests/Icons/ic_Check.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="../assests/Icons/ic_Check.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="../assests/Icons/ic_Edit.png" alt="" tabindex="0">
+                                    <img src="../assests/Icons/ic_Remove.png" alt="" tabindex="0">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="../assests/Icons/ic_Checkbox_Inactive.png" alt="">
+                                </td>
+                                <td class="m-sidebar">
+                                    MS15001
+                                </td>
+                                <td class="c-aside">
+                                    Lê Nguyễn Phương Anh
+                                </td>
+                                <td class="m-sidebar">
+                                    0360368999
+                                </td>
+                                <td>
+                                    Tổ Toán - Tin
+                                </td>
+                                <td>
+                                    Lý
+                                </td>
+                                <td>
+                                    Phòng Tin , phòng TN Hoá học
+                                </td>
+                                <td>
+                                    <img src="../assests/Icons/ic_Check.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="../assests/Icons/ic_Check.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="../assests/Icons/ic_Edit.png" alt="" tabindex="0">
+                                    <img src="../assests/Icons/ic_Remove.png" alt="" tabindex="0">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="../assests/Icons/ic_Checkbox_Inactive.png" alt="">
+                                </td>
+                                <td class="m-sidebar">
+                                    MS15001
+                                </td>
+                                <td class="c-aside">
+                                    Lê Nguyễn Phương Anh
+                                </td>
+                                <td class="m-sidebar">
+                                    0360368999
+                                </td>
+                                <td>
+                                    Tổ Toán - Tin
+                                </td>
+                                <td>
+                                    Lý
+                                </td>
+                                <td>
+                                    Phòng Tin , phòng TN Hoá học
+                                </td>
+                                <td>
+                                    <img src="../assests/Icons/ic_Check.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="../assests/Icons/ic_Check.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="../assests/Icons/ic_Edit.png" alt="" tabindex="0">
+                                    <img src="../assests/Icons/ic_Remove.png" alt="" tabindex="0">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="../assests/Icons/ic_Checkbox_Inactive.png" alt="">
+                                </td>
+                                <td class="m-sidebar">
+                                    MS15001
+                                </td>
+                                <td class="c-aside">
+                                    Lê Nguyễn Phương Anh
+                                </td>
+                                <td class="m-sidebar">
+                                    0360368999
+                                </td>
+                                <td>
+                                    Tổ Toán - Tin
+                                </td>
+                                <td>
+                                    Lý
+                                </td>
+                                <td>
+                                    Phòng Tin , phòng TN Hoá học
+                                </td>
+                                <td>
+                                    <img src="../assests/Icons/ic_Check.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="../assests/Icons/ic_Check.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="../assests/Icons/ic_Edit.png" alt="" tabindex="0">
+                                    <img src="../assests/Icons/ic_Remove.png" alt="" tabindex="0">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="../assests/Icons/ic_Checkbox_Inactive.png" alt="">
+                                </td>
+                                <td class="m-sidebar">
+                                    MS15001
+                                </td>
+                                <td class="c-aside">
+                                    Lê Nguyễn Phương Anh
+                                </td>
+                                <td class="m-sidebar">
+                                    0360368999
+                                </td>
+                                <td>
+                                    Tổ Toán - Tin
+                                </td>
+                                <td>
+                                    Lý
+                                </td>
+                                <td>
+                                    Phòng Tin , phòng TN Hoá học
+                                </td>
+                                <td>
+                                    <img src="../assests/Icons/ic_Check.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="../assests/Icons/ic_Check.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="../assests/Icons/ic_Edit.png" alt="" tabindex="0">
+                                    <img src="../assests/Icons/ic_Remove.png" alt="" tabindex="0">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="../assests/Icons/ic_Checkbox_Inactive.png" alt="">
+                                </td>
+                                <td class="m-sidebar">
+                                    MS15001
+                                </td>
+                                <td class="c-aside">
+                                    Lê Nguyễn Phương Anh
+                                </td>
+                                <td class="m-sidebar">
+                                    0360368999
+                                </td>
+                                <td>
+                                    Tổ Toán - Tin
+                                </td>
+                                <td>
+                                    Lý
+                                </td>
+                                <td>
+                                    Phòng Tin , phòng TN Hoá học
+                                </td>
+                                <td>
+                                    <img src="../assests/Icons/ic_Check.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="../assests/Icons/ic_Check.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="../assests/Icons/ic_Edit.png" alt="" tabindex="0">
+                                    <img src="../assests/Icons/ic_Remove.png" alt="" tabindex="0">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="../assests/Icons/ic_Checkbox_Inactive.png" alt="">
+                                </td>
+                                <td class="m-sidebar">
+                                    MS15001
+                                </td>
+                                <td class="c-aside">
+                                    Lê Nguyễn Phương Anh
+                                </td>
+                                <td class="m-sidebar">
+                                    0360368999
+                                </td>
+                                <td>
+                                    Tổ Toán - Tin
+                                </td>
+                                <td>
+                                    Lý
+                                </td>
+                                <td>
+                                    Phòng Tin , phòng TN Hoá học
+                                </td>
+                                <td>
+                                    <img src="../assests/Icons/ic_Check.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="../assests/Icons/ic_Check.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="../assests/Icons/ic_Edit.png" alt="" tabindex="0">
+                                    <img src="../assests/Icons/ic_Remove.png" alt="" tabindex="0">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="../assests/Icons/ic_Checkbox_Inactive.png" alt="">
+                                </td>
+                                <td class="m-sidebar">
+                                    MS15001
+                                </td>
+                                <td class="c-aside">
+                                    Lê Nguyễn Phương Anh
+                                </td>
+                                <td class="m-sidebar">
+                                    0360368999
+                                </td>
+                                <td>
+                                    Tổ Toán - Tin
+                                </td>
+                                <td>
+                                    Lý
+                                </td>
+                                <td>
+                                    Phòng Tin , phòng TN Hoá học
+                                </td>
+                                <td>
+                                    <img src="../assests/Icons/ic_Check.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="../assests/Icons/ic_Check.png" alt="">
+                                </td>
+                                <td>
+                                    <img src="../assests/Icons/ic_Edit.png" alt="" tabindex="0">
+                                    <img src="../assests/Icons/ic_Remove.png" alt="" tabindex="0">
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="pagionation">
+                        <ul class="pagination-list">
+                            <li class="pagination-item">
+                                <a href="#">
+                                   <img src="../assests/Icons/ic_MoveToFirst.png" alt="">
+                                </a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="#">
+                                    <img src="../assests/Icons/ic_Back.png" alt="">
+                                </a>
+                            </li>
+                            <li class="pagination-item number">
+                                <a href="#">1</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="#">
+                                    <img src="../assests/Icons/ic_Next.png" alt="">
+                                </a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="#">
+                                    <img src="../assests/Icons/ic_MoveToLast.png" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                        <span>1/2 trang</span>
+                        <span>(56 giáo viên)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
