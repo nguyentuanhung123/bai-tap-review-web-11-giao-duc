@@ -9,12 +9,12 @@
 
 @font-face {
   font-family: MISA Fonts;
-  src: url("../Fonts/OpenSans-Regular.ttf");
+  src: url("../Fonts/Roboto-Light-webfont.ttf");
 }
 
 @font-face {
   font-family: MISA Fonts Bold;
-  src: url("../Fonts/OpenSans-Bold.ttf");
+  src: url("../Fonts/Roboto-Bold-webfont.eot");
 }
 
 .sidebar {
@@ -296,7 +296,7 @@
 
 .pagionation span {
   margin: 0 20px;
-  color: #b1b1b1;
+  color: #4d4f5c;
 }
 
 /*TABLE*/
