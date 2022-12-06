@@ -1,0 +1,53 @@
+.main .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16px;
+  border-bottom: 1px solid #ccc;
+  height: 50px;
+}
+
+.header__list {
+  display: flex;
+  align-items: center;
+}
+
+.header__list-icon,
+.header__list-img {
+  cursor: pointer;
+}
+
+.header__list-icon {
+  position: relative;
+}
+
+.header__list-icon::after {
+  content: "";
+  position: absolute;
+  top: 7px;
+  right: 4px;
+  background-color: red;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.header__list-select {
+  display: flex;
+  align-items: center;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.header__job {
+  position: relative;
+}
+
+.header__job--icon {
+  background: url(../Icons/ic_sprites.svg) no-repeat -805px -296px;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 0;
+  right: -40px;
+}

@@ -1,0 +1,46 @@
+@import url(../layout/toolbar.css);
+
+.page {
+  padding: 8px 16px;
+  height: calc(100% - 50px);
+}
+
+/*TABLE*/
+.paging {
+  height: calc(100% - 64px);
+}
+
+.pagionation {
+  display: flex;
+  align-items: center;
+  height: 56px;
+  padding: 12px 24px;
+}
+
+.pagination-list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.pagination-item {
+  margin: 0 20px;
+}
+
+.pagination-item.number {
+  height: 32px;
+  line-height: 32px;
+  width: 64px;
+  text-align: center;
+  border: 1px solid #cecece;
+}
+
+.pagination-item a {
+  display: block;
+  color: #24344b;
+}
+
+.pagionation span {
+  margin: 0 20px;
+  color: #4d4f5c;
+}

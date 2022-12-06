@@ -1,0 +1,55 @@
+.btn {
+  padding: 8px;
+  height: 32px;
+  font-size: 12px;
+  margin: 0 0 0 8px;
+  min-width: 96px;
+  border: 1px solid #cecece;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #ffffff;
+}
+
+.btn:hover {
+  background-color: #eaecef;
+  color: #3d3f4e;
+  border: #cecece;
+}
+
+.btn--add-teacher {
+  background-color: #03ae66;
+}
+
+.btn--add-teacher:hover {
+  background-color: #02bf70;
+}
+
+.btn-image {
+  background-image: url(../../Icons/ic_More.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  min-width: 0;
+  width: 32px;
+}
+
+/*
+
+
+.toolbar__buttons button:first-child:hover {
+  background-color: #02bf70;
+  cursor: pointer;
+}
+
+.toolbar__buttons button.print {
+  background-color: #ffffff;
+  color: #3d3f4e;
+}
+
+.toolbar__buttons button.print:hover {
+  background-color: #eaecef;
+  color: #3d3f4e;
+  border: #cecece;
+  cursor: pointer;
+}
+
+*/
