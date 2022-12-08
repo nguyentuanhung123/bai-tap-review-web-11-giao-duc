@@ -44,7 +44,7 @@
 }
 
 .header__job--icon {
-  background: url(../Icons/ic_sprites.svg) no-repeat -805px -296px;
+  background: url(/assests/Icons/ic_sprites.svg) no-repeat -805px -296px;
   width: 24px;
   height: 24px;
   position: absolute;

@@ -29,7 +29,7 @@
 }
 
 .menu-bar {
-  background: url(../Icons/icons8-menu-30.png);
+  background: url(/assests/Icons/icons8-menu-30.png);
   cursor: pointer;
   width: 30px;
   height: 30px;
