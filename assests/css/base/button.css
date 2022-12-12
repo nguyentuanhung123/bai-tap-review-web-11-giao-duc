@@ -1,12 +1,13 @@
 .btn {
   padding: 8px;
   height: 32px;
-  font-size: 12px;
+  font-size: 13px;
   margin: 0 0 0 8px;
   min-width: 96px;
   border: 1px solid #cecece;
   border-radius: 4px;
   cursor: pointer;
+  color: #000;
   background-color: #ffffff;
 }
 
@@ -16,12 +17,18 @@
   border: #cecece;
 }
 
+.btn--default {
+  background-color: #03c573;
+  color: #fff;
+}
+
 .btn--add-teacher {
   background-color: #03ae66;
   color: #ffffff;
 }
 
-.btn--add-teacher:hover {
+.btn--add-teacher:hover,
+.btn--default:hover {
   background-color: #02bf70;
 }
 

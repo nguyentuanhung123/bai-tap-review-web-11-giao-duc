@@ -1,0 +1,17 @@
+.combobox {
+  height: 32px;
+  outline: none;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  display: block;
+  position: relative;
+  padding: 0 12px;
+  font-size: 13px;
+  background-color: #f5f5f5;
+  width: 186px;
+}
+
+.combobox:focus {
+  border-color: #089740;
+}

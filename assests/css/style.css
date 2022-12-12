@@ -4,7 +4,10 @@
 
 @import url(../css/base/table.css);
 @import url(../css/base/button.css);
+@import url(../css/base/combobox.css);
 @import url(../css/base/input.css);
+@import url(../css/base/popup.css);
+@import url(../css/base/dialog.css);
 
 * {
   padding: 0;
@@ -42,4 +45,49 @@
 
 .text-align--right {
   text-align: right;
+}
+
+/*Input*/
+.required {
+  color: #f00;
+}
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form-row + .form-row {
+  margin-top: 14px;
+}
+
+.flex {
+  display: flex;
+}
+
+.form-group,
+.flex-1 {
+  flex: 1;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.m-row + .m-row {
+  margin-top: 14px;
+}
+
+.m-row {
+  display: flex;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.m-row > .m-col {
+  padding: 0 6px;
+}
+
+.tab-wrapper {
+  display: flex;
 }
