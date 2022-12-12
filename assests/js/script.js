@@ -137,7 +137,9 @@ function onValidateFieldRequired() {
 }
 
 /**
- *
+ * Xác nhận các message Dialog lỗi
+ * Author : NTHUNG(12/12/2022)
+ * Edit by : NTHUNG(12/12/2022)
  */
 function btnConfirmErrorDialog() {
   try {
